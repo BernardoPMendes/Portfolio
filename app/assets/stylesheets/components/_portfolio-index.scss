@@ -1,0 +1,67 @@
+.my-name{
+  // font-size: 4em;
+  // font-weight: 500;
+  height: 700px;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.my-name-container {
+  position: absolute;
+  bottom: 0;
+  left: 84px;
+}
+
+.my-name .text{
+  margin-top: 50px;
+}
+
+.text-name{
+  // font-weight: 900;
+  background: linear-gradient(-90deg, #ff00aa,#0004ff,#00ffd0, #51ff00, #ff0000);
+	background-size: 400%;
+	animation: animate 15s infinite alternate;
+	min-height: 100vh;
+  color: transparent;
+  background-clip: text;
+}
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+
+.about-me .title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.about-me-text{
+  text-align: justify;
+}
+
+
+// ---------------------------------------------------------------projects cards------------------------------------------------------------------
+
+.img-car{
+  width: fit-content;
+  height: fit-content;
+}
+
+.back-color{
+  width: 100%;
+  margin: 10rem auto;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+  border: 0.2rem solid #20222e;
+  box-sizing: border-box;
+  backdrop-filter: blur(54px);
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  position: relative;
+}
