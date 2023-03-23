@@ -1,14 +1,14 @@
 .my-name{
   // font-size: 4em;
   // font-weight: 500;
-  height: 700px;
+  height: 770px;
   position: relative;
   margin-bottom: 3rem;
 }
 
 .my-name-container {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: 84px;
 }
 
@@ -35,7 +35,6 @@
 }
 
 .about-me .title {
-  text-align: center;
   margin-top: 50px;
   margin-bottom: 25px;
 }
@@ -54,7 +53,7 @@
 
 .back-color{
   width: 100%;
-  margin: 10rem auto;
+  margin: 7rem auto;
   background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
   border: 0.2rem solid #20222e;
   box-sizing: border-box;
@@ -64,4 +63,58 @@
   align-items: center;
   padding: 3rem 2rem;
   position: relative;
+}
+
+.margin{
+  margin-bottom: 7rem;
+}
+
+// -----------------------------------------------------------------------lenguagues-------------------------------------------------------------------
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-card{
+  width: 30vh !important;
+  height: 40vh !important;
+  margin: 2rem auto;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+  border: 0.2rem solid #20222e;
+  box-sizing: border-box;
+  backdrop-filter: blur(54px);
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  position: relative;
+
+  .text{
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+.ruby{
+  width: 150px;
+}
+
+.html{
+  width: 150px;
+}
+
+.css{
+  width: 150px;
+}
+
+.sql{
+  width: 150px;
+}
+
+.js{
+  width: 160px;
 }
