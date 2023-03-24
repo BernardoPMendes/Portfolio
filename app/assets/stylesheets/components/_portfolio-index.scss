@@ -76,7 +76,7 @@
   box-sizing: border-box;
   border: 0.2rem solid #20222e;
   color:white;
-  
+
 }
 
 // -----------------------------------------------------------------------lenguagues-------------------------------------------------------------------
@@ -127,4 +127,47 @@
 
 .js{
   width: 160px;
+}
+
+
+// ------------------------------------------responsive screen------------------------------------------
+
+
+/* Medium screens (mobile landscape) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles go here */
+  .navbar-middle{
+    width: 90vw;
+    padding: 2rem 1rem;
+  }
+
+  #nav-text{
+    font-size: 16px;
+  }
+  .my-name-container{
+    left: 15px;
+  }
+}
+
+/* Large screens (tablet portrait) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles go here */
+  .navbar-middle{
+    width: 90vw;
+    padding: 2rem 4rem;
+  }
+
+  #nav-text{
+    font-size: 16px;
+  }
+}
+
+/* Extra large screens (tablet landscape) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles go here */
+}
+
+/* Extra extra large screens (desktop) */
+@media only screen and (min-width: 993px) {
+  /* Styles go here */
 }
