@@ -145,15 +145,43 @@
   </div>
 </section>
 
-<section id="about">
+<section id="about mb-4">
   <div class="about-me container">
     <h2 class="title">About me</h2>
     <div class="about-me-text mx-5">
-      <p>Hello! My name is Bernardo Pinto Mendes and I am currently finishing an intensive 9-month bootcamp in Web Development of Ruby-on-Rails at LeWagon, taught in English. Previously, I attended Tomaz Pelayo in Santo Tirso for my secondary education, where I graduated from a technical-professional course in Electronics, Automation, and Computers from the 10th to the 12th grade.</p>
-      <p>During my technical course, I learned how to design and build electronic circuits, develop computer programs and industrial automation systems. It was an enriching experience for me as I learned to work in a team, solve problems creatively, and improve my communication skills.</p>
-      <p>However, my passion for technology did not stop there. I decided to delve deeper into programming and join a web development bootcamp. It was an intense and rewarding challenge where I learned to develop scalable and complex web applications using modern technologies. The bootcamp as a length of 9 weeks were my objective was chenge carreer.</p>
-      <p>I am excited about the endless possibilities that technology offers and eager to contribute to challenging and innovative projects. I hope to have the opportunity to work in a dynamic team where I can put my skills into practice and continue to learn.</p>
-      <p>Thank you for reading a bit about me. I would be happy to share more about my experiences and skills. Feel free to get in touch if you would like to know more!</p>
+      <p>Hello! My name is Bernardo Pinto Mendes and I am currently finishing an intensive 9-month bootcamp in Web Development of Ruby-on-Rails at LeWagon, taught in English. Previously, I attended Tomaz Pelayo in Santo Tirso for my secondary education, where I graduated from a technical-professional course in Electronics, Automation, and Computers from the 10th to the 12th grade. <span id="dots">...</span><span id="more">
+      <br>
+      <br>
+      During my technical course, I learned how to design and build electronic circuits, develop computer programs and industrial automation systems. It was an enriching experience for me as I learned to work in a team, solve problems creatively, and improve my communication skills.
+      <br>
+      <br>
+      However, my passion for technology did not stop there. I decided to delve deeper into programming and join a web development bootcamp. It was an intense and rewarding challenge where I learned to develop scalable and complex web applications using modern technologies. The bootcamp as a length of 9 weeks were my objective was chenge carreer.
+      <br>
+      <br>
+      I am excited about the endless possibilities that technology offers and eager to contribute to challenging and innovative projects. I hope to have the opportunity to work in a dynamic team where I can put my skills into practice and continue to learn.
+      <br>
+      <br>
+      Thank you for reading a bit about me. I would be happy to share more about my experiences and skills. Feel free to get in touch if you would like to know more!</span></p>
+
+      <button onclick="myFunction()" id="myBtn" class="btn rounded-pill mb-4">Read more</button>
     </div>
   </div>
 </section>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
